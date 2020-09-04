@@ -3,6 +3,7 @@ from os import path
 
 class color:
    PURPLE = '\033[95m'
+   RED = '\033[91m'
    END = '\033[0m'
 
 os.chdir('C:\\Gdrive\\Testplan')
@@ -39,8 +40,8 @@ def main():
                         print(f"copying {newfilename} to {dest}")
                         shutil.copy(newfilename, dest)
                     else:
-                        print(color.PURPLE + 'Creating a Duplicates folder, manual verification is recommended'  + color.END)
-                        print(f"{newfilename} already exists in {dest}. So creating a folder named 'duplicates' in {dest} and placing the file.")
+                        print(color.RED + 'Creating a Duplicates folder because the same filename exists, manual verification is recommended'  + color.END)
+                        print(f"{color.PURPLE}Creating a folder named 'Duplicates' in {dest} and placing the file '{filename}'.{color.END}")
                         dup = dest+'\\Duplicates'
                         if not path.exists(dup):
                             os.mkdir(dup)
