@@ -1,0 +1,16 @@
+import time
+print("Welcome to MAd liBS")
+time.sleep(1)
+person = input("Enter one of your Friend's name: ")
+park = input("Enter a name for the park: ")
+adj1 = input("Enter an appearance adjective: ")
+noun1 = input("Enter a noun: ")
+baloonColor = input("Enter a color: ")
+noun2 = input("Enter a noun for non living thing: ")
+adj2 = input("Enter an appearance adjective: ")
+skyColor = input("Enter a color: ")
+verb1 = input("enter a verb: ")
+verb2 = input("enter a verb: ")
+verb3 = input("enter a verb: ")
+
+print(f"Yesterday, {person} and I went to the park. on our way to the {park} park, we saw a {adj1} {noun1} on a bike. We also saw big {baloonColor} balloons tied to a {noun2}. Once we got to the {adj2} park, the sky turned {skyColor}. It started to {verb1} and {verb2}. {person} and I {verb3} all the way home. Tomorrow we will try to go to the {park} park again and hope it doesn't {verb1}.")
